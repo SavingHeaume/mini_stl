@@ -2,14 +2,14 @@
 #include <new>
 
 namespace mini_stl {
-template <typename T> class allocator {
+template <typename T> class Allocator {
 public:
   using value_type = T;
   using pointer = T *;
   using size_type = size_t;
 
-  allocator() noexcept {}
-  ~allocator() {}
+  Allocator() noexcept {}
+  ~Allocator() {}
 
   pointer allocate(size_type n) {
     return static_cast<pointer>(::operator new(n * sizeof(T)));
@@ -22,7 +22,7 @@ public:
   void destroy(pointer p) { p->~T(); }
 
   template <typename U> struct rebind {
-    using other = allocator<U>;
+    using other = Allocator<U>;
   };
 };
 } // namespace mini_stl
