@@ -3,6 +3,8 @@ add_rules("mode.debug", "mode.release")
 target("mini_stl")
     set_kind("binary")
     add_files("src/*.cpp")
+    add_includedirs("src/allocator")
+    add_includedirs("src/iterator")
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
@@ -72,4 +74,3 @@ target("mini_stl")
 --
 -- @endcode
 --
-

@@ -1,0 +1,6 @@
+[
+{
+  "directory": "/home/meng/projects/cpp/mini_stl",
+  "arguments": ["/usr/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-Isrc/allocator", "-Isrc/iterator", "-DNDEBUG", "-o", "build/.objs/mini_stl/linux/x86_64/release/src/main.cpp.o", "src/main.cpp"],
+  "file": "src/main.cpp"
+}]
