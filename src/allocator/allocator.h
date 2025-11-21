@@ -1,6 +1,7 @@
 #include <cstddef>
 #include <new>
 
+namespace mini_stl {
 template <typename T> class allocator {
 public:
   using value_type = T;
@@ -24,3 +25,4 @@ public:
     using other = allocator<U>;
   };
 };
+} // namespace mini_stl
